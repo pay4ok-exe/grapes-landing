@@ -90,10 +90,8 @@ export const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
       }
     };
 
-    const resizeObserver = new ResizeObserver((entries) => {
-      for (let entry of entries) {
-        updatePath();
-      }
+    const resizeObserver = new ResizeObserver(() => {
+      updatePath();
     });
 
     if (containerRef.current) {
@@ -155,7 +153,7 @@ export const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
           }}
           animate={{
             x1: gradientCoordinates.x1,
-            x1: gradientCoordinates.x2,
+            x2: gradientCoordinates.x2,
             y1: gradientCoordinates.y1,
             y2: gradientCoordinates.y2,
           }}
