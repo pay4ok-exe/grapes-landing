@@ -17,6 +17,10 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Киш-миш Велес - Виноград без косточек",
   description: "Сорт с огромными гроздьями и невероятной сладостью. Плодоносит уже через год после посадки!",
+  icons: {
+    icon: '/one_grape_without_bg.png',
+    apple: '/one_grape_without_bg.png',
+  },
 };
 
 export default function RootLayout({
